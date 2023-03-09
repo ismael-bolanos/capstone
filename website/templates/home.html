@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<h1 align="center">Upload to S3 Bucket</h1>
+    <form action="https://s3.console.aws.amazon.com/s3/buckets/capstoneprojectforteamtitans?region=us-west-1&tab=objects('upload')" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file-input">Select file to upload:</label>
+            <input type="file" id="file-input" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+{% endblock %}
